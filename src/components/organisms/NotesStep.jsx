@@ -14,11 +14,11 @@ const NotesStep = ({ onSubmit, onBack, reportData, onFinalSubmit, submitting }) 
   };
 
   const getSummaryText = () => {
-    const categoryText = reportData.category === "priority" 
+const categoryText = reportData.category_c === "priority" 
       ? "Priorität (Sofortige Reinigung)" 
       : "Standard-Verschmutzung";
     
-    return `${categoryText} in Zug ${reportData.trainId}, Wagen ${reportData.wagonId}`;
+    return `${categoryText} in Zug ${reportData.train_id_c}, Wagen ${reportData.wagon_id_c}`;
   };
 
   return (
@@ -36,7 +36,7 @@ const NotesStep = ({ onSubmit, onBack, reportData, onFinalSubmit, submitting }) 
         <div className="bg-gray-50 rounded-lg p-4">
           <h3 className="text-sm font-medium text-gray-900 mb-2">Ihre Meldung:</h3>
           <p className="text-sm text-gray-700 font-body">{getSummaryText()}</p>
-          {reportData.photoUrl && (
+{reportData.photo_url_c && (
             <div className="mt-2 flex items-center space-x-2">
               <ApperIcon name="Camera" size={16} className="text-gray-500" />
               <span className="text-sm text-gray-600">Foto hinzugefügt</span>

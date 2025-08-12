@@ -1,8 +1,11 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
+import { useSelector } from "react-redux";
 import Header from "@/components/organisms/Header";
 
 const Layout = () => {
+  const { isAuthenticated } = useSelector((state) => state.user);
+  
   return (
     <div className="min-h-screen bg-background">
       <Header />

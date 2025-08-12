@@ -11,17 +11,17 @@ const TrainInfoCard = ({ trainInfo }) => {
         <div className="flex-1">
           <div className="flex items-center space-x-2 mb-1">
             <span className="inline-flex items-center px-2 py-1 rounded-full text-xs font-medium bg-primary text-white">
-              {trainInfo.line}
+{trainInfo.line_c}
             </span>
             <span className="text-sm font-medium text-gray-900">
-              Zug {trainInfo.trainId}
+              Zug {trainInfo.train_id_c}
             </span>
           </div>
           <div className="flex items-center text-sm text-gray-600 space-x-4">
-            <span>Wagen {trainInfo.wagonId}</span>
+<span>Wagen {trainInfo.wagon_id_c}</span>
             <div className="flex items-center space-x-1">
               <ApperIcon name="MapPin" size={14} />
-              <span>{trainInfo.currentLocation.station}</span>
+              <span>{trainInfo.current_location_c}</span>
             </div>
           </div>
         </div>

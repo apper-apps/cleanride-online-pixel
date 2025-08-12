@@ -27,14 +27,14 @@ const ReportPage = () => {
   const [trainInfo, setTrainInfo] = useState(null);
   const [submitting, setSubmitting] = useState(false);
   
-  const [reportData, setReportData] = useState({
-    trainId: "",
-    wagonId: "",
-    category: "",
-    priority: false,
-    description: "",
-    photoUrl: "",
-    reporterContact: ""
+const [reportData, setReportData] = useState({
+    train_id_c: "",
+    wagon_id_c: "",
+    category_c: "",
+    priority_c: false,
+    description_c: "",
+    photo_url_c: "",
+    reporter_contact_c: ""
   });
 
   // Parse QR code parameters from URL
@@ -49,10 +49,10 @@ const ReportPage = () => {
         
         const info = await reportService.getTrainInfo(trainId, wagonId);
         setTrainInfo(info);
-        setReportData(prev => ({
+setReportData(prev => ({
           ...prev,
-          trainId: info.trainId,
-          wagonId: info.wagonId
+          train_id_c: info.train_id_c,
+          wagon_id_c: info.wagon_id_c
         }));
       } catch (err) {
         setError(err.message);
@@ -93,9 +93,9 @@ const ReportPage = () => {
   const handlePhotoUpload = async (file) => {
     try {
       const photoData = await reportService.uploadPhoto(file);
-      setReportData(prev => ({
+setReportData(prev => ({
         ...prev,
-        photoUrl: photoData.photoUrl
+        photo_url_c: photoData.photo_url_c
       }));
       toast.success("Foto erfolgreich hochgeladen");
     } catch (error) {
@@ -171,7 +171,7 @@ const ReportPage = () => {
             onPhotoUpload={handlePhotoUpload}
             onNext={handleNext}
             onBack={handleBack}
-            currentPhoto={reportData.photoUrl}
+currentPhoto={reportData.photo_url_c}
           />
         )}
 

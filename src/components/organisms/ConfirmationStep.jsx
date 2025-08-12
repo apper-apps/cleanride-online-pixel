@@ -48,14 +48,14 @@ const ConfirmationStep = ({ trainInfo, reportData }) => {
             </div>
             <div className="flex items-center justify-between">
               <span className="text-sm font-medium text-gray-700">Fahrzeug:</span>
-              <span className="text-sm text-gray-600">
-                {trainInfo?.line} - Zug {trainInfo?.trainId}, Wagen {trainInfo?.wagonId}
+<span className="text-sm text-gray-600">
+                {trainInfo?.line_c} - Zug {trainInfo?.train_id_c}, Wagen {trainInfo?.wagon_id_c}
               </span>
             </div>
             <div className="flex items-center justify-between">
               <span className="text-sm font-medium text-gray-700">Kategorie:</span>
-              <span className="text-sm text-gray-600">
-                {reportData.category === "priority" ? "Priorität" : "Standard"}
+<span className="text-sm text-gray-600">
+                {reportData.category_c === "priority" ? "Priorität" : "Standard"}
               </span>
             </div>
           </div>
