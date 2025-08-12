@@ -1,0 +1,26 @@
+[
+  {
+    "Id": 1,
+    "reportIds": [1, 4],
+    "assignedTeam": "Team Alpha",
+    "priority": "high",
+    "status": "completed",
+    "completedAt": "2024-01-15T09:15:00Z"
+  },
+  {
+    "Id": 2,
+    "reportIds": [2],
+    "assignedTeam": "Team Beta",
+    "priority": "normal",
+    "status": "in_progress",
+    "completedAt": null
+  },
+  {
+    "Id": 3,
+    "reportIds": [3],
+    "assignedTeam": "Team Gamma",
+    "priority": "normal",
+    "status": "assigned",
+    "completedAt": null
+  }
+]

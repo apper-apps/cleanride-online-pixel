@@ -1,0 +1,112 @@
+@import "react-toastify/dist/ReactToastify.css";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+.font-display {
+  font-family: "DM Sans", sans-serif;
+}
+
+/* Toast customization */
+.Toastify__toast-container {
+  font-size: 14px;
+  z-index: 9999;
+}
+
+.Toastify__toast {
+  border-radius: 8px;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+  font-family: "Inter", sans-serif;
+}
+
+.Toastify__toast--success {
+  background: #00A651;
+  color: white;
+}
+
+.Toastify__toast--error {
+  background: #DC2626;
+  color: white;
+}
+
+.Toastify__toast--warning {
+  background: #FFB81C;
+  color: #1f2937;
+}
+
+/* Custom styles */
+.progress-dots {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
+.progress-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #e5e7eb;
+  transition: background-color 200ms ease;
+}
+
+.progress-dot.active {
+  background-color: #003C7D;
+}
+
+.progress-dot.completed {
+  background-color: #00A651;
+}
+
+/* Photo upload styles */
+.photo-upload-frame {
+  border: 2px dashed #003C7D;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+  min-height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  transition: all 200ms ease;
+}
+
+.photo-upload-frame:hover {
+  border-color: #0066CC;
+  background: linear-gradient(135deg, #f0f8ff 0%, #e6f3ff 100%);
+}
+
+.photo-upload-frame.drag-over {
+  border-color: #00A651;
+  background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%);
+}
+
+.category-button {
+  transition: all 150ms ease-out;
+}
+
+.category-button:active {
+  transform: scale(0.98);
+}
+
+.category-button.priority {
+  background: linear-gradient(135deg, #fee2e2 0%, #fecaca 100%);
+  border-color: #f87171;
+}
+
+.category-button.priority:hover {
+  background: linear-gradient(135deg, #fecaca 0%, #fca5a5 100%);
+}
+
+.category-button.standard {
+  background: linear-gradient(135deg, #f0f8ff 0%, #e6f3ff 100%);
+  border-color: #0066CC;
+}
+
+.category-button.standard:hover {
+  background: linear-gradient(135deg, #e6f3ff 0%, #dbeafe 100%);
+}

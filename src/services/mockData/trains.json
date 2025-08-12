@@ -1,0 +1,72 @@
+[
+  {
+    "Id": "U1-401",
+    "line": "U1",
+    "wagons": ["W1", "W2", "W3", "W4"],
+    "currentLocation": {
+      "station": "Hauptbahnhof Süd",
+      "platform": "Gleis 1",
+      "coordinates": {
+        "lat": 53.5511,
+        "lng": 9.9937
+      }
+    },
+    "nextStop": "Steinstraße"
+  },
+  {
+    "Id": "U2-205",
+    "line": "U2",
+    "wagons": ["W1", "W2", "W3"],
+    "currentLocation": {
+      "station": "Berliner Tor",
+      "platform": "Gleis 2",
+      "coordinates": {
+        "lat": 53.5533,
+        "lng": 10.0417
+      }
+    },
+    "nextStop": "Burgstraße"
+  },
+  {
+    "Id": "U3-103",
+    "line": "U3",
+    "wagons": ["W1", "W2", "W3", "W4", "W5"],
+    "currentLocation": {
+      "station": "Barmbek",
+      "platform": "Gleis 1",
+      "coordinates": {
+        "lat": 53.5851,
+        "lng": 10.0453
+      }
+    },
+    "nextStop": "Dehnhaide"
+  },
+  {
+    "Id": "U4-302",
+    "line": "U4",
+    "wagons": ["W1", "W2", "W3"],
+    "currentLocation": {
+      "station": "Jungfernstieg",
+      "platform": "Gleis 1",
+      "coordinates": {
+        "lat": 53.5533,
+        "lng": 9.9925
+      }
+    },
+    "nextStop": "Stephansplatz"
+  },
+  {
+    "Id": "U1-205",
+    "line": "U1",
+    "wagons": ["W1", "W2", "W3", "W4"],
+    "currentLocation": {
+      "station": "Kellinghusenstraße",
+      "platform": "Gleis 2",
+      "coordinates": {
+        "lat": 53.5734,
+        "lng": 9.9888
+      }
+    },
+    "nextStop": "Eppendorfer Baum"
+  }
+]

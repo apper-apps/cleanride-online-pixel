@@ -1,0 +1,50 @@
+[
+  {
+    "Id": 1,
+    "trainId": "U1-401",
+    "wagonId": "W1",
+    "category": "priority",
+    "priority": true,
+    "description": "Erbrochenes im Mittelgang",
+    "photoUrl": "/images/report1.jpg",
+    "timestamp": "2024-01-15T08:30:00Z",
+    "reporterContact": "",
+    "status": "completed"
+  },
+  {
+    "Id": 2,
+    "trainId": "U2-205",
+    "wagonId": "W2",
+    "category": "standard",
+    "priority": false,
+    "description": "Müll auf dem Boden verstreut",
+    "photoUrl": "/images/report2.jpg",
+    "timestamp": "2024-01-15T10:15:00Z",
+    "reporterContact": "max.mustermann@email.com",
+    "status": "in_progress"
+  },
+  {
+    "Id": 3,
+    "trainId": "U3-103",
+    "wagonId": "W1",
+    "category": "standard",
+    "priority": false,
+    "description": "Verschüttete Getränke auf Sitzplätzen",
+    "photoUrl": "",
+    "timestamp": "2024-01-15T14:22:00Z",
+    "reporterContact": "",
+    "status": "submitted"
+  },
+  {
+    "Id": 4,
+    "trainId": "U1-401",
+    "wagonId": "W3",
+    "category": "priority",
+    "priority": true,
+    "description": "Urin in der Ecke des Waggons",
+    "photoUrl": "/images/report4.jpg",
+    "timestamp": "2024-01-15T16:45:00Z",
+    "reporterContact": "",
+    "status": "completed"
+  }
+]
